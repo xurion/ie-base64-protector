@@ -1,0 +1,21 @@
+{
+  "name": "ie-base64-protector",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ie-base64-protector.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css": "^2.2.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jslint": "^1.1.14",
+    "jshint": "^2.7.0",
+    "jslint": "^0.9.0-pre006"
+  }
+}
