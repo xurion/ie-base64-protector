@@ -69,11 +69,12 @@ body {
 
 Note: You have to have a mechanism to add the correct class to the html tag. This is what I use:<br>
 
-&lt;!--[if lt IE 7]&gt;&lt;html class="lt-ie9 lt-ie8 lt-ie7" lang="en"&gt;&lt;![endif]--&gt;<br>
-&lt;!--[if IE 7]&gt;&lt;html class="lt-ie9 lt-ie8" lang="en"&gt;&lt;![endif]--&gt;<br>
-&lt;!--[if IE 8]&gt;&lt;html class="lt-ie9" lang="en"&gt;&lt;![endif]--&gt;<br>
-&lt;!--[if gt IE 8]&gt;&lt;!--&gt;&lt;html&gt;&lt;!--&lt;![endif]--&gt;
-
+```html
+<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if IE 7]><html class="lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+```
 
 ## License
 
