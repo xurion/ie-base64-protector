@@ -1,4 +1,5 @@
-/* globals module, require, __dirname*/
+/*jslint nomen: true*/
+/*global module, require, __dirname*/
 
 module.exports = function (grunt) {
 
