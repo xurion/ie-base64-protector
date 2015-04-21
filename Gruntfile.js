@@ -21,33 +21,17 @@ module.exports = function (grunt) {
         },
         nodeunit: {
             all: ['test/*.js']
-        },
-        copy: {
-            main: {
-                files: [{
-                    expand: true,
-                    cwd: 'node_modules/css',
-                    src: ['**'],
-                    dest: 'lib/css/',
-                    flatten: false
-                }]
-            }
-        },
-        clean: ['lib/css']
+        }
     });
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-jslint');
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-nodeunit');
 
-    grunt.registerTask('build', [
+    grunt.registerTask('test', [
         'jshint',
         'jslint',
-        'nodeunit',
-        'clean',
-        'copy'
+        'nodeunit'
     ]);
 
 };
