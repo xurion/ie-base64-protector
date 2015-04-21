@@ -26,21 +26,17 @@ module.exports = function (grunt) {
             main: {
                 files: [{
                     expand: true,
-                    src: ['node_modules/css'],
-                    dest: 'lib/css',
-                    flatten: true
+                    cwd: 'node_modules/css',
+                    src: ['**'],
+                    dest: 'lib/css/',
+                    flatten: false
                 }]
             }
         },
-        clean: ['lib/css'],
-        watch: {
-            files: ['*', 'lib/**/*'],
-            tasks: ['build']
-        }
+        clean: ['lib/css']
     });
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-jslint');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
