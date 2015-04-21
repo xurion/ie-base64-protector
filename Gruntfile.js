@@ -6,14 +6,14 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         jshint: {
-            files: ['Gruntfile.js', 'ie-base64-protector.js', 'test/*.js'],
+            files: ['Gruntfile.js', 'tasks/*.js', 'test/*.js'],
             options: {
                 jshintrc: '.jshintrc'
             }
         },
         jslint: {
             client: {
-                src: ['Gruntfile.js', 'ie-base64-protector.js', 'test/*.js'],
+                src: ['Gruntfile.js', 'tasks/*.js', 'test/*.js'],
                 directives: {
                     browser: true
                 }
