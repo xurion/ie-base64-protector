@@ -5,7 +5,8 @@ module.exports = function (grunt) {
 
     'use strict';
 
-    var protector = require('./lib/protector');
+    var protector = require('./lib/protector'),
+        newStyles;
 
     grunt.registerMultiTask('ieBase64Protector', 'Duplicates blocks of styles that contain a background image, adds a custom prefix to the selector and adds a comment after the background style to prevent imageEmbed from encoding the image', function () {
 
@@ -17,8 +18,9 @@ module.exports = function (grunt) {
 
             if (cssFiles.hasOwnProperty(selectorPrefix)) {
 
-                protector.protect(cssFiles[selectorPrefix], selectorPrefix);
-
+                fs.readFileSync(cssFiles[selectorPrefix]).toString();
+                newStyles = protector.protect(cssFiles[selectorPrefix], selectorPrefix);
+                fs.appendFileSync(cssFiles[selectorPrefix], newStyles);
             }
         }
     });
