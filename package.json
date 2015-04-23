@@ -1,10 +1,14 @@
 {
   "name": "ie-base64-protector",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "",
   "main": "ie-base64-protector.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xurion/ie-base64-protector"
   },
   "author": "",
   "license": "ISC",
