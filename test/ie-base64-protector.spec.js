@@ -4,7 +4,7 @@
 
     'use strict';
 
-    var protector = require("../lib/protector"),
+    var protector = require("../tasks/lib/protector"),
         selectorPrefix = '.lt-ie8',
         selector = 'body',
         css = selector + ' { background: url(image.jpg); }';
