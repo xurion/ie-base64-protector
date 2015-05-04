@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/xurion/ie-base64-protector.svg?branch=master)](https://travis-ci.org/xurion/ie-base64-protector)
 
-This task duplicates styles in a stylesheet, appends a custom selector and adds an ignore comment flag for [grunt-image-embed](https://github.com/ehynds/grunt-image-embed).
+This task duplicates styles in a stylesheet, appends a custom selector and adds an ignore comment flag for [grunt-image-embed](https://www.npmjs.com/package/grunt-image-embed).
 
 Created by Dean James (https://github.com/xurion)
 
@@ -11,7 +11,7 @@ Created by Dean James (https://github.com/xurion)
 Install this plugin with the command:
 
 ```js
-npm install https://github.com/xurion/ie-base64-protector/tarball/0.3.4
+npm install ie-base64-protector
 ```
 
 Next, add this line to your project's grunt file:
