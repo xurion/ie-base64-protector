@@ -1,4 +1,7 @@
 # IE base64 protector
+
+[![Build Status](https://travis-ci.org/xurion/ie-base64-protector.svg?branch=master)](https://travis-ci.org/xurion/ie-base64-protector)
+
 This task duplicates styles in a stylesheet, appends a custom selector and adds an ignore comment flag for [grunt-image-embed](https://github.com/ehynds/grunt-image-embed).
 
 Created by Dean James (https://github.com/xurion)
