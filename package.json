@@ -1,6 +1,6 @@
 {
   "name": "ie-base64-protector",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "",
   "main": "ie-base64-protector.js",
   "scripts": {
